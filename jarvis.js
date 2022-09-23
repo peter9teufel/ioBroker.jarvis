@@ -86,7 +86,7 @@ function startAdapter(options) {
 		BACKUP_STATES.forEach(s => {
 			s.id = s.id || s.state;
 			
-			const file = _path.join(__dirname, '..', '..', 'iobroker-data', 'jarvis', adapter.instance.toString(), '_BACKUP_' + s.id.toUpperCase() + '.json');
+			const file = _path.join(__dirname, '..', '..', 'iobroker-data', 'jarvis2', adapter.instance.toString(), '_BACKUP_' + s.id.toUpperCase() + '.json');
 			_fs.readFile(file, (err, contents) => {
 				
 				// create dir
@@ -512,7 +512,7 @@ function backup(s, data) {
 	// save backup
 	adapter.log.info('Backup ' + s.id + '..');
 	
-	const file = _path.join(__dirname, '..', '..', 'iobroker-data', 'jarvis', adapter.instance.toString(), '_BACKUP_' + s.id.toUpperCase() + '.json');
+	const file = _path.join(__dirname, '..', '..', 'iobroker-data', 'jarvis2', adapter.instance.toString(), '_BACKUP_' + s.id.toUpperCase() + '.json');
 	_fs.writeFile(file, JSON.stringify(BACKUPS[s.id], null, 3), err => err && adapter.log.error(err));
 }
 
