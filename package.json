@@ -1,0 +1,52 @@
+{
+  "author": {
+    "name": "zefau",
+    "email": "zefau@mailbox.org"
+  },
+  "bugs": {
+    "url": "https://github.com/Zefau/ioBroker.jarvis/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "zefau",
+      "email": "zefau@mailbox.org"
+    }
+  ],
+  "dependencies": {
+    "@iobroker/adapter-core": "^2.4.0",
+    "got": "^11.8.1",
+    "node-schedule": "^1.3.2"
+  },
+  "deprecated": false,
+  "description": "jarvis - just another remarkable vis",
+  "devDependencies": {
+    "@iobroker/testing": "^2.4.1",
+    "axios": "^0.21.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.2",
+    "mocha": "^8.2.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/Zefau/ioBroker.jarvis",
+  "license": "MIT",
+  "main": "jarvis.js",
+  "name": "iobroker.jarvis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zefau/ioBroker.jarvis.git"
+  },
+  "scripts": {
+    "test": "npm run test:package && npm run test:unit",
+    "test:integration": "mocha test/integration --exit",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "translate": "gulp translateAndUpdateWordsJS"
+  },
+  "version": "2.2.5"
+}
