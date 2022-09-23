@@ -40,7 +40,7 @@
   "homepage": "https://github.com/peter9teufel/ioBroker.jarvis",
   "license": "MIT",
   "main": "jarvis.js",
-  "name": "iobroker.jarvis",
+  "name": "iobroker.jarvis2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peter9teufel/ioBroker.jarvis.git"
